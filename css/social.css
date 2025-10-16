@@ -1,0 +1,57 @@
+/* Social/connect section styles */
+.connect-section {
+  background: #f8f9fa;
+  padding: 3rem 0;
+}
+.connect-section .section-heading-wrapper h2 {
+  color: #1e201d;
+  margin-bottom: 0.25rem;
+}
+.connect-section .section-heading-wrapper p {
+  color: #636363;
+  margin-bottom: 1rem;
+}
+.social-list {
+  display: inline-flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform .18s ease, background .18s ease, color .18s ease;
+}
+.social-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  color: #fff;
+  background: #EE5F38; /* theme accent */
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+/* Brand colors */
+.social-btn.facebook { color: #3b5998; }
+.social-btn.github { color: #333; }
+.social-btn.scholar { color: #6c757d; }
+.social-btn.university { color: #007bff; }
+.social-btn.linkedin { color: #0a66c2; }
+/* Hover: invert brand color to white when background accent applied */
+.social-btn.facebook:hover,
+.social-btn.github:hover,
+.social-btn.scholar:hover,
+.social-btn.university:hover,
+.social-btn.linkedin:hover {
+  color: #fff;
+}
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .social-btn { width: 46px; height: 46px; font-size: 16px; }
+}

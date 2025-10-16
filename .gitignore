@@ -1,0 +1,7 @@
+# Ignore specific PHP files
+class-file/Admin.php
+class-file/setup.php
+class-file/zSetup.php
+
+# Ignore entire db folder
+db/
